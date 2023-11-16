@@ -9,9 +9,19 @@ header{
     "logo burger"
     "nav nav nav";
 
+    @include md{
+        grid-template-columns: 50% auto 4%;
+    }
+
+    @include xl{
+        grid-template-columns: 25% 25% auto;
+        grid-template-areas: 
+        "logo nav"
+
+
+    }
 
     #logo-container{
-/*         border: 1px solid blue; */
         align-items: center;
         display: flex;
         grid-area: logo;
@@ -23,11 +33,15 @@ header{
     } */
 
     #burger-container{
-/*         border: 1px solid black; */
+
         display: flex;
         justify-content: flex-end;
         align-items: center;
         grid-area: burger;
+
+        @include xl{
+            display: none;
+        }
     }
 
 

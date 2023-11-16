@@ -10,19 +10,25 @@ nav{
     margin-top: 12px;
     padding-top: 20px;
     border-top: 1px solid var(--aqua);
+
+    @include xl{
+        border: none;
+    }
     ul{
         display: flex;
-        justify-content: flex-end;
         flex-direction: column;
         align-items: flex-end;
 
-
+        @include xl{
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+        }
 
 
         li{
             a:link, a:visited{
                 padding: 30px 10px 15px 10px;
-/*                 border: 1px solid red; */
                 display: inline-block;
                 margin-bottom: 12px;
                 color: var(--black);
