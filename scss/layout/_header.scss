@@ -14,10 +14,10 @@ header{
     }
 
     @include xl{
-        grid-template-columns: 25% 25% auto;
+        grid-template-columns: 10% auto 50%;
+        padding: 24px 48px;
         grid-template-areas: 
         "logo nav"
-
 
     }
 

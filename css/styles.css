@@ -393,6 +393,7 @@ a {
 }
 
 nav {
+  display: none;
   margin-top: 12px;
   padding-top: 20px;
   border-top: 1px solid var(--aqua);
@@ -400,6 +401,9 @@ nav {
 @media (min-width: 1200px) {
   nav {
     border: none;
+    margin-top: 0;
+    padding-top: 0;
+    display: block;
   }
 }
 nav ul {
@@ -420,12 +424,18 @@ nav ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  nav ul li {
+    /*                 height: 100%; This offset my buttons and did not align the other items */
   }
 }
 nav ul li a:link, nav ul li a:visited {
@@ -433,13 +443,22 @@ nav ul li a:link, nav ul li a:visited {
   display: inline-block;
   margin-bottom: 12px;
   color: var(--black);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+@media (min-width: 1200px) {
+  nav ul li a:link, nav ul li a:visited {
+    /*                     height: 100%;
+                        box-sizing: border-box;
+                        margin-bottom: 0px; */
+  }
 }
 nav ul li a:hover, nav ul li a:active {
   color: var(--aqua);
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
-nav ul li a.signup-btn {
+nav ul li .signup-btn {
   background-color: var(--aqua);
   color: var(--white);
   border-radius: 16px;
@@ -448,23 +467,25 @@ nav ul li a.signup-btn {
   border: none;
   -webkit-transition: 0.25s;
   transition: 0.25s;
-}
-nav ul li a.signin-btn {
-  background-color: var(--aqua);
-  color: var(--white);
-  border-radius: 16px;
-  padding: 18px;
-  font-weight: 600;
-  border: none;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
+  cursor: pointer;
 }
 nav ul li .signup-btn:hover {
-  background-color: var(--aqua);
+  background-color: var(--black);
   color: var(--white);
 }
-nav ul li .signin-btn:hover {
+nav ul li .signin-btn {
   background-color: var(--aqua);
+  color: var(--white);
+  border-radius: 16px;
+  padding: 18px;
+  font-weight: 600;
+  border: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+}
+nav ul li .signin-btn:hover {
+  background-color: var(--black);
   color: var(--white);
 }
 
@@ -490,8 +511,9 @@ header {
 }
 @media (min-width: 1200px) {
   header {
-    -ms-grid-columns: 25% 25% auto;
-    grid-template-columns: 25% 25% auto;
+    -ms-grid-columns: 10% auto 50%;
+    grid-template-columns: 10% auto 50%;
+    padding: 24px 48px;
         grid-template-areas: "logo nav";
   }
 }
@@ -546,3 +568,9 @@ header nav {
 /* =============
     Footer
 ============= */
+#hero {
+  background-image: url("../img/valley.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
