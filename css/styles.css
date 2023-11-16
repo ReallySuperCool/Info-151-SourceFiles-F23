@@ -13,6 +13,7 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --aqua: #024A58;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -331,9 +332,36 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+#validation-btn {
+  text-align: center;
+  margin-top: 100px;
+}
+
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 /* =============
     Buttons
 ============= */
@@ -360,14 +388,117 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
+nav {
+  margin-top: 12px;
+  padding-top: 20px;
+  border-top: 1px solid var(--aqua);
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+nav ul li a:link, nav ul li a:visited {
+  padding: 30px 10px 15px 10px;
+  /*                 border: 1px solid red; */
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--black);
+}
+nav ul li a:hover, nav ul li a:active {
+  color: var(--aqua);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+nav ul li a.signup-btn {
+  background-color: var(--aqua);
+  color: var(--white);
+  border-radius: 16px;
+  padding: 18px;
+  font-weight: 600;
+  border: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+nav ul li a.signin-btn {
+  background-color: var(--aqua);
+  color: var(--white);
+  border-radius: 16px;
+  padding: 18px;
+  font-weight: 600;
+  border: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+nav ul li .signup-btn:hover {
+  background-color: var(--aqua);
+  color: var(--white);
+}
+nav ul li .signin-btn:hover {
+  background-color: var(--aqua);
+  color: var(--white);
+}
+
 /* =============
     Header
 ============= */
-#hero {
-  background-image: url("../img/valley.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
+header {
+  padding: 12px 24px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto 8%;
+  grid-template-columns: 50% auto 8%;
+      grid-template-areas: "logo burger" "nav nav nav";
+  /*     #search{
+      I omitted the search section due to the Figma not having a search bar for the provided outline.
+      } */
+}
+header #logo-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  /*         border: 1px solid blue; */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-area: logo;
+}
+header #burger-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  /*         border: 1px solid black; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: burger;
+}
+header nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: nav;
 }
 
 /* =============

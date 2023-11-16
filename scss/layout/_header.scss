@@ -1,9 +1,37 @@
 /* =============
     Header
 ============= */
-#hero{
-    background-image: url("../img/valley.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+header{
+    padding: 12px  24px;
+    display: grid;
+    grid-template-columns: 50% auto 8%;
+    grid-template-areas: 
+    "logo burger"
+    "nav nav nav";
+
+
+    #logo-container{
+/*         border: 1px solid blue; */
+        align-items: center;
+        display: flex;
+        grid-area: logo;
+
+    }
+
+/*     #search{
+    I omitted the search section due to the Figma not having a search bar for the provided outline.
+    } */
+
+    #burger-container{
+/*         border: 1px solid black; */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        grid-area: burger;
+    }
+
+
+    nav{
+        grid-area: nav;
+    }
 }
