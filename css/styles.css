@@ -363,6 +363,13 @@ textarea {
 /* =============
     Header
 ============= */
+#hero {
+  background-image: url("../img/valley.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
 /* =============
     Footer
 ============= */
