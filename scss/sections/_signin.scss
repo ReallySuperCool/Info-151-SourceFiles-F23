@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     padding: 16px;
+    position: fixed;
 
     form{
         input{
@@ -12,6 +13,13 @@
             box-sizing: border-box;
             height: 60px;
             margin-bottom: 24px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        #sign-in-container{
+            display: flex;
+            justify-content: flex-end;
         }
 
 
