@@ -6,6 +6,14 @@
     display: flex !important;
 }
 
+.hide-burger-x{
+    display: none !important;
+}
+
+.hide-burger-bars{
+    display: none !important;
+}
+
 ul{
     padding: 0;
     margin: 0;
@@ -20,3 +28,4 @@ ul{
     text-align: center;
     margin-top: 100px;
 }
+ 

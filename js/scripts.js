@@ -2,7 +2,10 @@
 
 var mainNav = document.querySelector("#mainNav");
 var signInUpButtons = document.querySelector("#sign-in-up-buttons");
-var burgerBtn = document.querySelector("#burger-container button")
+var burgerBtn = document.querySelector("#burger-container button");
+
+var burgerBars = document.querySelector("#burger-bars");
+var burgerX = document.querySelector("#burger-x");
 /* console.log(burgerBtn); */
 
 var canYouSeeMainNav = false;
@@ -23,6 +26,12 @@ function showNav(){
 
         signInUpButtons.classList.add("showSignIn");
         canYouSeeMainNav = true;
+
+        // hide burger
+        burgerBars.classList.add("hide-burger-bars");
+
+        //show burger x
+        burgerX.classList.remove("hide-burger-x");
     }else{
         console.log("hide menu");
         //this will remove the class of showMainNav to the id mainNav
@@ -30,7 +39,16 @@ function showNav(){
         canYouSeeMainNav = false;
 
         signInUpButtons.classList.remove("showSignIn");
+
+        // show* burger
+        burgerBars.classList.remove("hide-burger-bars");
+
+        //hide burger x
+        burgerX.classList.add("hide-burger-x");
+
         canYouSeeMainNav = false;
+
+
     }
 
 }
