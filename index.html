@@ -14,6 +14,14 @@
     <!-- Fancy Apps -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 
+    <!-- Fancy Carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
     <link rel="stylesheet" href="css/styles.css">
     <title>Week 10 FancyApps </title>
 </head>
@@ -55,7 +63,18 @@
 
         </section>
         <nav id="mainNav">
-            <ul>
+
+            <div data-aos="fade-up-left">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Impact</a></li>
+                    <li><a href="#">Locations</a></li>
+                    <li><button class="signin-btn" id="sign-in-btn">Sign In</button></li>
+                    <li><button class="signup-btn">Sign Up</button></li>
+                </ul>
+            </div>
+<!--             <ul>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Impact</a></li>
@@ -63,7 +82,7 @@
                 <li><button class="signin-btn" id="sign-in-btn">Sign In</button></li>
                 <li><button class="signup-btn">Sign Up</button></li>
             </ul>
-
+ -->
         </nav>
     </header>
 
@@ -75,24 +94,47 @@
             <h1>Fancybox</h1>
             <ul>
                 <li>
-                    <a href="img/fancy-1.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy-1.jpg" alt="sea turtle"/></a>
+                    <a href="img/fancy-1.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy-1.jpg" alt="cave"/></a>
                 </li>
                 <li>
-                    <a href="img/fancy-2.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy-2.jpg" alt="sea turtle"/></a>
+                    <a href="img/fancy-2.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy-2.jpg" alt="cliff"/></a>
                 </li>
                 <li>
                     <a href="img/fancy-3.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy-3.jpg" alt="sea turtle"/></a>
                 </li>
                 <li>
-                    <a href="img/fancy-4.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy-4.jpg" alt="sea turtle"/></a>
+                    <a href="img/fancy-4.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy-4.jpg" alt="beach"/></a>
                 </li>
             </ul>
         </div>
     </section>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <section id="fancyCarousel">
+        <div id="fc-grid-item">
+            <h1>Fancy Carousel</h1>
+            <div class="f-carousel" id="myCarousel">
+<!--                 <div class="f-carousel_slide"><img src="img/fancy-1.jpg" alt="Cave"><div>
 
+                <div class="f-carousel_slide"><img src="img/fancy-2.jpg" alt="cliff"><div>
+
+                <div class="f-carousel_slide"><img src="img/fancy-3.jpg" alt="sea turtle"><div>
+
+                <div class="f-carousel_slide"><img src="img/fancy-4.jpg" alt="beach"><div> -->
+
+                <div class="f-carousel_slide"></div id="fc-1" class="slide"><div></div>
+                <div class="f-carousel_slide"></div id="fc-2" class="slide"><div></div>
+                <div class="f-carousel_slide"></div id="fc-3" class="slide"><div></div>
+                <div class="f-carousel_slide"></div id="fc-4" class="slide"><div></div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/scripts-dist.js"></script>
 
 
