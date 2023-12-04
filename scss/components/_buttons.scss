@@ -9,3 +9,32 @@ button{
     margin: 0;
     cursor: pointer;
 }
+
+.green-btn{
+
+    padding: 16px 24px;
+    background-color: var(--aqua);
+    transition: 0.25s;
+    color: var(--white);
+    border-radius: 8px;
+}
+
+.green-btn:hover{
+    background-color: var(--white);
+    color: var(--aqua);
+}
+
+.white-btn{
+
+    border: 1px solid var(--aqua);
+    padding: 16px 24px;
+    background-color: var(--white);
+    transition: 0.25s;
+    color: var(--aqua);
+    border-radius: 8px;
+}
+
+.white-btn:hover{
+    background-color: var(grey);
+    color: var(--white);
+}
