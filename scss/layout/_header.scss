@@ -28,6 +28,35 @@ header{
 
     }
 
+    #main-nav{
+        grid-area: nav;
+    }
+
+    #sign-in-up-buttons{
+        display: none;
+        grid-area: signIn;
+
+        padding: 21px 24px;
+
+        @include md{
+            display: flex;
+            justify-content: flex-end;
+            padding: 24px 0 0;
+            align-items: center;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        @include xl{
+            padding-right: 24px;
+
+        }
+
+        button{
+            margin-left: 16px;
+        }
+    }
+
 /*     #search{
     I omitted the search section due to the Figma not having a search bar for the provided outline.
     } */

@@ -10,7 +10,7 @@ button{
     cursor: pointer;
 }
 
-.green-btn{
+.signin-btn{
 
     padding: 16px 24px;
     background-color: var(--aqua);
@@ -19,12 +19,12 @@ button{
     border-radius: 8px;
 }
 
-.green-btn:hover{
+.signin-btn:hover{
     background-color: var(--white);
     color: var(--aqua);
 }
 
-.white-btn{
+.signup-btn{
 
     border: 1px solid var(--aqua);
     padding: 16px 24px;
@@ -34,7 +34,7 @@ button{
     border-radius: 8px;
 }
 
-.white-btn:hover{
+.signup-btn:hover{
     background-color: var(grey);
     color: var(--white);
 }

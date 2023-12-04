@@ -1,15 +1,18 @@
 #sign-in-container{
+
+
+
     background-color: #024A58CC;
     height: 100vh;
     padding: 16px;
     position: fixed;
     width: 100px;
     box-sizing: border-box;
-    display: flex;
+/*     display: flex; */
     align-items: center;
     justify-content: center;
     height: 100%;
-
+    display: none;
 
 
     form{
