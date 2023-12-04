@@ -10,8 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Fancy Apps -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
     <link rel="stylesheet" href="css/styles.css">
-    <title>Week 9 Modals </title>
+    <title>Week 10 FancyApps </title>
 </head>
 
 <body>
@@ -41,13 +45,7 @@
             <img src="img/Logo.svg" alt="logo">
 
         </section>
-<!--         <section id="search">
 
-            <form action="#">
-                <button><img src="/search" alt="search"></button>
-                <input type="text">
-            </form>
-        </section> -->
         <section id="burger-container">
             <button>
                 <i class="fa-solid fa-burger" id="burger-bars"></i>
@@ -69,14 +67,34 @@
         </nav>
     </header>
 
-    <section id="hero">
+    <section id="hero"></section>
 
+
+    <section id="fancybox">
+        <div id="fb-grid-item">
+            <h1>Fancybox</h1>
+            <ul>
+                <li>
+                    <a href="img/fancy-1.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy-1.jpg" alt="sea turtle"/></a>
+                </li>
+                <li>
+                    <a href="img/fancy-2.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy-2.jpg" alt="sea turtle"/></a>
+                </li>
+                <li>
+                    <a href="img/fancy-3.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy-3.jpg" alt="sea turtle"/></a>
+                </li>
+                <li>
+                    <a href="img/fancy-4.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy-4.jpg" alt="sea turtle"/></a>
+                </li>
+            </ul>
+        </div>
     </section>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 
     <script src="js/scripts-dist.js"></script>
+
 
 
     <div id="validation-logo">
